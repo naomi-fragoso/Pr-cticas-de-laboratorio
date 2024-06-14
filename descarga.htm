@@ -1,0 +1,182 @@
+<!DOCTYPE html> <!-- define el tipo de documento (DOCTYPE) y especifica la versión de HTML que se está utilizando.-->
+<html lang="en"> <!--especifica el idioma principal del contenido de la página--> 
+<head> <!--proporciona metadatos sobre el documento-->
+    <meta charset="UTF-8"> <!--se utiliza para especificar el conjunto de caracteres (charset) utilizado en el documento.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--controla la forma en que el contenido se muestra y se escala en dispositivos móviles-->
+    <title>CECYTEM COACALCO| Cuidado de la salud Mental y prevención de adicciones.</title><!-- en esta linea se coloca el titulo de la pagina web -->
+
+
+    
+    <link rel="stylesheet" href="Style.css"><!-- es esta linea el fromato de html se va a vincular con el estilo de css para darle diseño -->
+    <link rel="icon" href="logo.ico"><!-- en esta parte sucede lo mismo solo que ahora va a ser con una imagen  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><!-- Es un elemento HTML que se utiliza para vincular recursos externos a un documento HTML.-->
+</head><!-- esta esta linea de codigo cierra el encanbezado del documento html -->
+<body><!-- se define como el contenido principal de la pagina por asi decirlo es la estructura de la pagina web  -->
+    <div id="Inicio_pagina"></div> <!-- Indica el inicio de la pagina -->
+    <header><!-- se utiliza para definir el encabezado de la pagina de una seccion especifica del contenido dentro de la pagina web -->
+        <nav><!-- se usa para definir la parte de una seccion de la pagina -->
+            <div class="container-hero"><!--  crea una contenedor en elque se le aplica cierta estilizacion-->
+                <div class="container hero"><!-- crea un contenedro con las caracteristicas especificas declaradas en css -->
+
+                    <div class="container-logo"><!-- se deriva una clase con el mismo contenedor donde en esta se mete una imagen  -->
+                        <img src="cecytem-logo-57EA94498B-seeklogo.com.png" alt="logo" width="65" height="75" ><!-- se mete la imagen que se vaa utilizar en esta tambien se le asignan el tamaño de la imagen-->
+                    </div><!-- se cierra el div declarado -->
+
+                    <div class="customer-support"><!-- crea una clase a la cual se le asigna un mobre en esta misma se le integra diseño de css -->
+                        <div class="content-customer-support"><!-- crea un contenedor donde se le dara los estilos empleados en el css -->
+                            <span class="text1">CECYTEM COACALCO | GAFEN</span><!-- spna se utiliza para agrupar elementos de texto en línea.es un elemento de nivel de línea, lo que significa que no provoca un salto de línea y se utiliza para aplicar estilos -->
+                            <span class="text2">“Sin drogas no hay lío, sigue tu propio río”</span><!-- span se utiliza para agrupar elementos de texto en línea.es un elemento de nivel de línea, lo que significa que no provoca un salto de línea y se utiliza para aplicar estilos -->
+                        </div><!-- se cierra el div declarado arriba -->
+                    </div><!-- se cierra el div declarado arriba -->
+                </div><!-- se cierra el div declarado arriba -->
+            </div><!-- se cierra el div declarado arriba -->
+
+            <ul class="menu"><!--se declaraa un elemento de lista en la cual una se declara una class en la cual se le asigna el nombre de menu el cual se estilizara en css-->
+               <li><a href="#footer">Contacto</a></li>  <!-- declara un elemento de lista, que contiene un enlace a una sección de la página identificada por el identificador  -->
+               <li><a href="#footer">Acerca De Nosotros</a></li>   <!-- se declara un elemnto de una lista en el cual se vincula con el nombre de footer el cual se vinculara con una seccion especifica -->
+            </ul><!-- se cierra la lista que se inicio arriba -->
+
+            <div class="container">
+                <div class="dropdown">
+                    <button class="dropbtn">Opciones</button>
+                    <div class="dropdown-content">
+                        <button onclick="cambiarColorAzul()">Azul Oscuro</button>
+                        <button onclick="cambiarColorNegro()">Negro</button>
+                        <button onclick="restaurarColor()">Original</button>
+                    </div>
+                </div>
+            </div>
+            <script>
+                // Guardar los estilos de fondo originales
+                var colorOriginal = getComputedStyle(document.body).backgroundImage + ' ' +
+                        getComputedStyle(document.body).backgroundColor;
+            
+                // Verificar si hay un color de fondo guardado en localStorage al cargar la página
+                document.addEventListener('DOMContentLoaded', function() {
+                    var colorGuardado = localStorage.getItem('fondo');
+                    if (colorGuardado) {
+                        document.body.style.background = colorGuardado;
+                    } else {
+                        // Si no hay color guardado, usar el color original
+                        document.body.style.background = colorOriginal;
+                    }
+                });
+            
+                // Función para cambiar el fondo a negro y guardar la preferencia
+                function cambiarColorNegro() {
+                    var colorNegro = '#000000'; // Negro oscuro
+                    document.body.style.background = colorNegro;
+                    localStorage.setItem('fondo', colorNegro);
+                }
+            
+                // Función para cambiar el fondo a azul oscuro y guardar la preferencia
+                function cambiarColorAzul() {
+                    var colorAzul = 'rgb(10, 10, 24)'; // Azul oscuro
+                    document.body.style.background = colorAzul;
+                    localStorage.setItem('fondo', colorAzul);
+                }
+            
+                // Función para restaurar el color de fondo original y eliminar la preferencia guardada
+                function restaurarColor() {
+                    document.body.style.background = colorOriginal; // Restaurar al color original definido en CSS
+                    localStorage.removeItem('fondo'); // Eliminar la preferencia guardada
+                }
+
+
+            </script>
+            
+            
+
+
+        </nav><!--cierra el navegador declarado arroba -->
+    </header><!--cierra el header declarado arriba -->
+
+    
+    <nav class="secciones"><!-- se utiliza un navegador el cual contendra el nombre de secciones elcual servira comom un identificador -->
+        <ul><!--se declara una lista -->
+            <li><a class="elemento-1" href="Introduccionn.html">INTRODUCCION</a></li><!--se declara un elemento de la clase el cual tendra el nombre de elemento 1, el cual servira para darle estilizacion en css, y en esta se le asignara el nombre de introduccion para que se utilize como un navegador en las demas partes del codigo-->
+            <li><a class="elemento-11" href="Objetivo.html">OBJETIVO</a></li><!-- se declara en elemento de la clase el cual tendra el nombre de elemento 6, el cual servira para darle estilizacion en css y en este se le asignara el nombre de importancia para que se utilize como un navegador en las demas partes del codigo -->
+            <li><a class="elemento-12" href="Mision.html">MISION</a></li><!-- se declara en elemento de la clase el cual tendra el nombre de elemento 7, el cual servira para darle estilizacion en css y en este se le asignara el nombre de formulario para que se utilize como un navegador en las demas partes del codigo -->
+            <li><a class="elemento-13" href="Vision.html">VISION</a></li><!-- se declara en elemento de la clase el cual tendra el nombre de elemento 7, el cual servira para darle estilizacion en css y en este se le asignara el nombre de formulario para que se utilize como un navegador en las demas partes del codigo -->
+            <li><a class="elemento-2" href="Drogas.html">DROGAS</a></li><!--se declara un elemento de la clase el cual tendra el nombre de elemento 2, el cual servira para darle estilizacion en css, y en esta se le asignara el nombre de drogas para que se utilize como un navegador en las demas partes del codigo-->
+            <li><a class="elemento-4" href="Salud-mental.html">SALUD MENTAL</a></li><!-- se declara en elemento de la clase el cual tendra el nombre de elemento 4, el cual servira para darle estilizacion en css y en este se le asignara el nombre de salud para que se utilize como un navegador en las demas partes del codigo-->
+            <li><a class="elemento-6" href="Importancia.html">IMPORTANCIA</a></li><!-- se declara en elemento de la clase el cual tendra el nombre de elemento 6, el cual servira para darle estilizacion en css y en este se le asignara el nombre de importancia para que se utilize como un navegador en las demas partes del codigo -->
+            <li><a class="elemento-7" href="Formulario.html">FORMULARIO</a></li><!-- se declara en elemento de la clase el cual tendra el nombre de elemento 7, el cual servira para darle estilizacion en css y en este se le asignara el nombre de formulario para que se utilize como un navegador en las demas partes del codigo -->
+            <li><a class="elemento-10" href="Evaluaciones de Salud Mental y Adicciones.html">EVALUACIONES DE SALUD MENTAL Y ADICCIONES</a></li><!-- se declara en elemento de la clase el cual tendra el nombre de elemento 7, el cual servira para darle estilizacion en css y en este se le asignara el nombre de formulario para que se utilize como un navegador en las demas partes del codigo -->
+            <li><a class="elemento-11" href="galeria.html">GALERIA</a></li><!-- se declara en elemento de la clase el cual tendra el nombre de elemento 7, el cual servira para darle estilizacion en css y en este se le asignara el nombre de formulario para que se utilize como un navegador en las demas partes del codigo -->
+            <li><a class="elemento-12" href="Chatdeapoyo.html">CHAT DE APOYO</a></li><!-- se declara en elemento de la clase el cual tendra el nombre de elemento 7, el cual servira para darle estilizacion en css y en este se le asignara el nombre de formulario para que se utilize como un navegador en las demas partes del codigo -->
+        </ul><!-- se cierra la lista declarada arriba -->
+    </nav><!--se cierra el navegador declarado arriba-->
+
+    <header class="head2"><!--se abre un header-->
+    </header> <!--cierra el header -->
+
+    <!-- Seccion de titulo -->
+    <div class="espacio4"></div><!-- se declara una clase en a la cual se le asignara el nombre de espacio-->
+    <div class="introduccion"><!-- se declara una clase en la clase en la cual se le asigna el nombre de introduccion que esta vinculado al navegador ya antes puesto.-->
+        <div class="contenedor"><!--se crea un contendor l cual se estilizara en css-->
+            <img src="gift introduccion.gif" class="gift" alt=""><!--se metera una imagen -->
+            <div class="espacio6"></div><!-- se utiliza para dejar espacios   -->
+            <h2 class="titulo">CUIDADO DE LA SALUD  MENTAL <br> Y PREVENCIÓN DE <br> ADICCIONES<br></h2><!--se mete un div en el cual se metera el titulo el cual se dejara un renglo para diseño-->
+        </div><!--se cierra el div implementado en la parte de arriba-->
+    </div><!--se cierra el div-->
+    <div class="espacio7"></div><!--se utiliza para dejar espacios-->
+
+    
+
+    <footer id="footer"> <!-- Se abre un pie de página con el identificador 'footer'. -->
+        <div class="imf-logofot"> <!-- Se abre un contenedor div con la clase CSS 'imf-logofot'. -->
+            <div class="espaciofooter"></div> <!-- Se abre y se cierra un contenedor div vacío con la clase CSS 'espaciofooter'. -->
+            <img src="cecytem-logo-57EA94498B-seeklogo.com.png" alt="logo" width="100" height="120"> <!-- Se inserta una imagen con la ruta especificada y atributos de ancho y alto. -->
+            <div class="espaciofooter"></div> <!-- Se abre y se cierra un contenedor div vacío con la clase CSS 'espaciofooter'. -->
+        </div> <!-- Se cierra el contenedor 'imf-logofot'. -->
+        <div class="contacto"> <!-- Se abre un contenedor div con la clase CSS 'contacto'. -->
+            <h2>Contacto</h2> <!-- Se inserta un encabezado de nivel 2 con el texto "Contacto". -->
+            <div class="espaciofooter"></div> <!-- Se abre y se cierra un contenedor div vacío con la clase CSS 'espaciofooter'. -->
+            <h6>¿Tienes dudas? ¡Contáctanos!</h6> <!-- Se inserta un encabezado de nivel 6 con el texto "¿Tienes dudas? ¡Contáctanos!". -->
+            <address> <!-- Se abre un elemento de dirección. -->
+                <p>Email: <a href="mailto:gafen07coa@gmail.com">gafen07coa@gmail.com</a></p> <!-- Se inserta un párrafo con un enlace de correo electrónico. -->
+                <div class="espaciofooter"></div> <!-- Se abre y se cierra un contenedor div vacío con la clase CSS 'espaciofooter'. -->
+            </address> <!-- Se cierra el elemento de dirección. -->
+        </div> <!-- Se cierra el contenedor 'contacto'. -->
+        <div class="acerca"> <!-- Se abre un contenedor div con la clase CSS 'acerca'. -->
+            <div class="espaciofooter"></div> <!-- Se abre y se cierra un contenedor div vacío con la clase CSS 'espaciofooter'. -->
+            <h2>Acerca de Nosotros</h2> <!-- Se inserta un encabezado de nivel 2 con el texto "Acerca de Nosotros". -->
+            <div class="espacio-textacerca"></div> <!-- Se abre y se cierra un contenedor div vacío con la clase CSS 'espacio-textacerca'. -->
+            <h6>Nosotros somos alumnos de la carrera de programación, que hemos creado esta página con el fin de hacer conscientes a los adolescentes sobre las drogas. <!-- Se inserta un encabezado de nivel 6 con texto explicativo. -->
+                <div class="espacio-textacerca"></div> <!-- Se abre y se cierra un contenedor div vacío con la clase CSS 'espacio-textacerca'. -->
+                <p>Alumnos:</p> <!-- Se inserta un párrafo con el texto "Alumnos:". -->
+                <div class="espacioulli"></div> <!-- Se abre y se cierra un contenedor div vacío con la clase CSS 'espacioulli'. -->
+                <ol> <!-- Se abre una lista ordenada. -->
+                    <li>Aguilar Bautista Elizabeth</li> <!-- Se inserta un elemento de lista con el nombre de un alumno. -->
+                    <li>Alcántara Pérez José Alberto</li> <!-- Se inserta un elemento de lista con el nombre de un alumno. -->
+                    <li>Cruz Aguilar José Fernando</li> <!-- Se inserta un elemento de lista con el nombre de un alumno. -->
+                    <li>Guerrero Pérez Gael</li> <!-- Se inserta un elemento de lista con el nombre de un alumno. -->
+                    <li>Segundo Fragoso Naomi Estrella</li> <!-- Se inserta un elemento de lista con el nombre de un alumno. -->
+                </ol> <!-- Se cierra la lista ordenada. -->
+                <div class="espacioulli"></div> <!-- Se abre y se cierra un contenedor div vacío con la clase CSS 'espacioulli'. -->
+                <br>¡Explora nuestra página y descubre más sobre nosotros!"</h6> <!-- Se inserta un salto de línea y texto explicativo. -->
+            <div class="espaciofooter"></div> <!-- Se abre y se cierra un contenedor div vacío con la clase CSS 'espaciofooter'. -->
+        </div> <!-- Se cierra el contenedor 'acerca'. -->
+        <div class="redes"> <!-- Se abre un contenedor div con la clase CSS 'redes'. -->
+            <div class="espaciofooter"></div> <!-- Se abre y se cierra un contenedor div vacío con la clase CSS 'espaciofooter'. -->
+            <h2>Redes Sociales</h2> <!-- Se inserta un encabezado de nivel 2 con el texto "Redes Sociales". -->
+            <a href="https://www.facebook.com/profile.php?id=61559078582221&mibextid=LQQJ4d" class="face"> <!-- Se inserta un enlace a Facebook con la clase CSS 'face'. -->
+                <i class="fa-brands fa-facebook"></i> <!-- Se inserta un icono de Facebook. -->
+            </a> <!-- Se cierra el enlace a Facebook. -->
+            <a href="https://www.instagram.com/gafen_coacalco?igsh=ZGxxZXJkbGdpZGF3&utm_source=qr" class="insta"> <!-- Se inserta un enlace a Instagram con la clase CSS 'insta'. -->
+                <i class="fa-brands fa-square-instagram"></i> <!-- Se inserta un icono de Instagram. -->
+            </a> <!-- Se cierra el enlace a Instagram. -->
+            <div class="espaciofooter"></div> <!-- Se abre y se cierra un contenedor div vacío con la clase CSS 'espaciofooter'. -->
+        </div> <!-- Se cierra el contenedor 'redes'. -->
+    </footer> <!-- Se cierra el pie de página. -->
+    
+    <footer2> <!-- Se abre otro pie de página con el identificador 'footer2'. -->
+        <div class="derechos"> <!-- Se abre un contenedor div con la clase CSS 'derechos'. -->
+            <p>&copy; 2024 CECYTEM COACALCO | GAFEN. Todos los Derechos Reservados</p> <!-- Se inserta un párrafo con derechos de autor. -->
+        </div> <!-- Se cierra el contenedor 'derechos'. -->
+    </footer2> <!-- Se cierra el segundo pie de página. -->
+
+    
+</body> <!-- Se cierra el cuerpo del documento HTML. -->
+</html> <!-- Se cierra el documento HTML. -->
