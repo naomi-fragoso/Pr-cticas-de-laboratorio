@@ -1,0 +1,63 @@
+header{
+    background-color: rgb(300, 10, 250);
+    color: black;
+    padding: 30px;
+    text-align: center;
+}
+body{
+    background-color: rgb(8, 8, 8);
+}
+.logo{
+    margin: 0;
+}
+.nav{
+    margin-top: 20px;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+}
+.menu l1{
+    display: inline;
+    margin-right: 10px;
+}
+.menu l1 a{
+    color:rgba(252, 5, 239, 0.726);
+    text-decoration: none;
+}
+
+.main{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.product{
+     background-color: rgb(239, 246, 252);
+     border: 10px solid #ff036c;
+     padding:20px;
+     text-align: center;
+     width: 200px;
+}
+.producto-title{
+    margin-top: 0;
+}
+.product-price {
+    font-weight: bold;
+}
+.btn{
+    background-color: rgb(78, 4, 163);
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+    margin-top: 10px;
+    padding:  8px 15px;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background-color: chartreuse;
+}
+.footer{
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;

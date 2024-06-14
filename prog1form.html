@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página Web con Formulario, Secciones, Imágenes, Video, Listas y Tablas</title>
+<style>
+
+/* Estilos CSS */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f0f0f0;
+}
+header {
+background-color: #333;
+color: #fff;
+padding: 10px;
+text-align: center;
+}
+section {
+padding: 20px;
+margin: 20px;
+background-color: #fff;
+border: 1px solid #ccc;
+}
+form {
+margin-bottom: 20px;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+margin-bottom: 20px;
+}
+th, td {
+border: 1px solid #ccc
+padding: 8px;
+text-align: left;
+}
+
+</style>
+</head>
+<body>
+    <header>
+<h1>Mi Página Web</h1>
+</header>
+<section>
+    
+<h2>Formulario de Contacto</h2>
+<form>
+<label for="nombre">Nombre: </label>
+<input type="text" id="nombre" name="nombre" required><br><br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required><br><br>
+<label for="mensaje">Mensaje: </label><br>
+<textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+<input type="submit" value="Enviar">
+</form>
+</section>
+<section>
+<h2>Imágenes y Video</h2>
+<img src="imagen.jpg" alt="Imagen">
+<video width="320" height="240" controls>
+<source src="video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</section>
+<section>
+<h2>Listas</h2>
+<ul>
+<li>Elemento 1</li>
+<li>Elemento 2</li>
+<li>Elemento 3</li>
+</ul>
+</section>
+<section>
+<h2>Tabla de Datos</h2>
+<table>
+<tr>
+<th>Nombre</th>
+<th>Email</th>
+<th>Mensaje</th>
+</tr>
+<tr>
+<td>Juan</td>
+<td>Juan@example.com</td>
+<td>Hola, ¿cómo estás?</td>
+</tr>
+<tr>
+<td>Maria</td>
+<td>maria@example.com</td>
+<td>Me gustaría saber más sobre tu producto.</td>
+</tr>
+</table>
+</section>
+</body>
+</html>

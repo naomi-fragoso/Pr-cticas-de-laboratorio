@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Formulario que muestra la suma a pagar de 5 productos</h1>
+<label for="numero1">Precio del numero 1:</label>
+<input type="text" id="numero1" onchange="sumar();"><br>
+
+<label for="numero2">Precio del numero 2:</label>
+<input type="text" id="numero2" onchange="sumar();"><br>
+
+<label for="numero2">Precio del numero 3:</label>
+<input type="text" id="numero3" onchange="sumar();"><br>
+
+<label for="numero2">Precio del numero 4:</label>
+<input type="text" id="numero4" onchange="sumar();"><br>
+
+<label for="numero2">Precio del numero 5:</label>
+<input type="text" id="numero5" onchange="sumar();"><br>
+
+
+
+<label for="resultado">Resultado</label>
+<input type="text" id="resultado">
+
+<script>
+    // si la respuesta que se espera es sumar
+    function sumar(){
+        var numero1 = document.getElementById('numero1').value;
+        var numero2 = document.getElementById('numero2').value;
+        var numero3 = document.getElementById('numero3').value;
+        var numero4 = document.getElementById('numero4').value;
+        var numero5 = document.getElementById('numero5').value;
+    
+
+        if(numero1!=='' && numero2!=='' && numero3!=='' && numero4!=='' && numero5!==''){
+            var suma = parseInt(numero1)+parseInt(numero2)+parseInt(numero3)+parseInt(numero4)+parseInt(numero5);
+            document.getElementById('resultado').value = suma;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidado del agua</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(142, 219, 243);
+        }
+        header {
+            background-color: #1220eb;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #e7e9e9;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            color: #0a0a0a;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position:static;
+            bottom: 0;
+            width: 100%;
+        }
+        h8{
+            font-size: 17px;
+        }
+        h5{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cecytem y el cuidado del agua</h1>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#importancia">Importancia del agua</a>
+        <a href="#ahorro">Consejos de ahorro</a>
+        <a href="#contaminacion">Contaminación del agua</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <p>Bienvenido a nuestra página dedicada al cuidado del agua en Cecytem, en donde te ayudaremos a que te informes, o sepas más acerca de la comunidad y sobre todo el uso correcto de la utilización del agua.</p>
+        <p>Para obtener más información sobre Cecytem, visita su <a href="https://www.cecytemmx.edu.mx/">sitio web oficial</a>.</p>
+    </section>
+    <section id="importancia">
+        <h2>Importancia del agua</h2>
+        <p>El agua es un recurso vital para la vida en el planeta. Es importante cuidarla para garantizar el bienestar de las generaciones futuras y debido a que permite el desarrollo de la sociedad, la justicia social y contrarresta la pobreza.</p>
+        <p>Para profundizar sobre la importancia del agua, puedes consultar este <a href="https://www.un.org/es/sections/issues-depth/water/index.html">enlace</a>.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/video2" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <div class="container">
+        <div class="box10" id="Botones">
+            <h5>Adicional</h5>
+            <h8>¿Te interesaria aprender más del agua?</h8>
+        
+
+            <button onclick="imprimirMensaje1()">Imprimir Mensaje</button>
+
+            <script>
+            function imprimirMensaje1(){
+            document.getElementById("mensaje").innerHTML = "Consulta en internet en la página de ONU"
+            }
+
+            </script>
+            <br>
+            <div id="mensaje"></div>
+        
+        </div>
+
+    <section id="ahorro">
+        <h2>Consejos de ahorro</h2>
+        <p>Te ofrecemos algunos consejos para ahorrar agua en tu día a día y contribuir al cuidado del medio ambiente.</p>
+        <ul>
+            <li>Repara las fugas de agua.</li>
+            <li>No dejes el grifo abierto mientras te cepillas los dientes.</li>
+            <li>Utiliza la lavadora y el lavavajillas con carga completa.</li>
+            <li>Riega las plantas por la mañana o por la noche para evitar la evaporación rápida del agua.</li>
+        </ul>
+        <p>Para más consejos sobre cómo ahorrar agua, visita este <a href="https://www.wwf.es/que_hacemos/agua/consejos_para_ahorrar_agua/">sitio web</a>.</p>
+        <img src="https://agua.org.mx/wp-content/uploads/2019/03/INFOGRAFI%CC%81A-CONSUMO-AGUA.png" alt="Imagen de consejos de ahorro" width="500">
+    </section>
+    <section id="contaminacion">
+        <h2>Contaminación del agua</h2>
+        <p>La contaminación del agua es un problema grave que afecta a muchos lugares en el mundo. acumulación de una o más sustancias ajenas al agua que pueden generar una gran cantidad de consecuencias, entre las que se incluye el desequilibrio en la vida de los seres vivos. Conoce más sobre sus causas y consecuencias.</p>
+        <p>Para obtener más información sobre la contaminación del agua, puedes leer este <a href="https://www.ecured.cu/Contaminaci%C3%B3n_del_agua">artículo</a>.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/video2" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+
+    <div class="container">
+        <div class="box11" id="Experiencia">
+            <h2>Experiencia</h2>
+            <h6>¿Te sirvio la información de esta página?</h6>
+            <button onclick="imprimirMensaje2()">Si</button>
+
+            <script>
+                function imprimirMensaje2(){
+                    alert("Esperemos que te haiga servido de mucha ayuda para tu comienzo de desarrollo de apps.");
+                }
+            </script>
+
+<button onclick="imprimirMensaje3()">No</button>
+
+<script>
+function imprimirMensaje3(){
+alert("Lo sentimos mucho");
+}
+</script>
+            
+        </div>
+
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¡Déjanos tus comentarios y sugerencias!</p>
+        <form action="guardar_datos.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Cecytem y el cuidado del agua</p>
+    </footer>
+</body>
+</html>

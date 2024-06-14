@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de datos DEO</title>
+    <style>
+        body {
+
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDFzpzIIW_IGnBTdiu29d4L_hvXGX1UwYTtWRGEg4XXg&s);
+            background-position: center;
+            nav {
+                 color: #000000;
+                 
+            padding: 20px;
+            font-size: 25px;
+            
+        }
+        }
+        .welcome-section {
+            text-align: center;
+            color: rgb(4, 207, 4);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #ffee07;
+            color: rgb(230, 11, 102);
+            padding: 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav a {
+            color: rgb(15, 185, 0);
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+
+        nav a:hover {
+            color: #070707;
+        }
+
+        footer {
+            background-color: #37e914;
+            color: rgb(255, 255, 255);
+            padding: 1rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+
+        label {
+            margin-bottom: 0.5rem;
+        }
+
+        input,
+        button {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 4px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        input {
+            border: 1px solid #0e942f;
+        }
+
+        button {
+            background-color: #0bd826;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2a00e6;
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro e Ingreso de Datos</title>
+    </head>
+    <body>
+        <nav>
+            <div class="welcome-section">
+                <h1>BIENVENIDO A CECYTEM COACALCO</h1>
+            </div>
+            <ul> 
+                <p>Menú de personal encontrado en CECYTEM Coacalco</p>
+
+                <li><a href="https://cecytem.edomex.gob.mx/">Alumnos</a></li>
+                <li><a href="http://cecytem.edomex.gob.mx/convocatorias">Docentes</a></li>
+                <li><a href="https://cecytem.edomex.gob.mx/sites/cecytem.edomex.gob.mx/files/files/REGLAMENTO%20INTERIOR%20DE%20TRABAJO%20DEL%20PERSONAL%20ADMINISTRATIVO%20DEL%20COLEGIO%20DE%20ESTUDIOS%20CIENT%C3%8DFICOS%20Y%20TECNOL%C3%93GICOS%20DEL%20ESTADO%20DE%20M%C3%89XICO%20(1).pdf">Administrativos</a></li>
+            </ul>
+        
+
+        <h2>Registro Escolar DEO</h2>
+        <form action="/registrar" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="apellido">Apellido:: </label>
+            <input type="email" id="correo" name="correo" required>
+            <br>
+            <label for="contrasena">Curso:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+            <br>
+
+            <label for="nombre">Edad:</label> 
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <button type="submit">Registrar</button>
+        </form>
+        <h2>Ingreso de datos personales</h2>
+        <form action="/ingresar" method="post">
+            <label for="correo_ingreso">Nombre: </label>
+            <input type="email" id="correo_ingreso" name="correo_ingreso" required>
+            <br>
+            <label for="contrasena_ingreso">Curso:</label>
+            <input type="password" id="contrasena_ingreso" name="contrasena_ingreso"
+                   required>
+            <br>
+            <button type="submit">Ingresar a la página</button>
+        </form>
+        <footer>
+            <h2>Contacto</h2>
+            <p> Teléfono Plantel Coacalco: 55 1548 9198 </p>
+
+            <p> Control escolar: 
+                Ing. Ricardo Zubillaga, Inscripciones
+                , Constancias de estudios
+                , Reposición de credenciales
+                Horario de atención de 8:00am a 5:00pm
+                ce.coacalco@cecytem.mx </p>
+
+                <p> Vinculación:
+                    Lic. Sara Baltazar,
+                    , Becas
+                    , Servicio social
+                    Horario de atención: 8:00am a 5:00pm
+                    http://vinculacion-coacalco.mex.tl</p>
+
+                    <p> Orientación:
+                        Horario de atención:
+                        7:00am a 3:00pm</p>
+
+                        <p> ¡Bienvenido!</p>
+
+
+        </footer>
+    </body>
+    </html>

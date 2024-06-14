@@ -1,0 +1,46 @@
+.cajero {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #f2f200;
+    border-radius: 10px;
+    text-align: center;
+  }
+  body{
+    background-color: #03fffb;  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #5100ff;
+    color: #fffafa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ae07dd;
+  }
+  
+  #mensaje {
+    font-weight: bold;
+  }
+  
+  
